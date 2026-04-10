@@ -159,9 +159,15 @@ export default function Site() {
                 {t("about_ig")}
               </a>
             </div>
-            <div className="relative">
+            <div className="relative flex flex-col gap-4">
               <div className="aspect-[3/4] rounded-lg border border-red-900/20 overflow-hidden">
                 <img src="/timur.jpg" alt="Timur Gasanov" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative rounded-lg border border-red-900/20 overflow-hidden">
+                <img src="/ufc-fighters.jpg" alt="Timur with UFC fighters Danil Donchenko and Yaroslav Amosov" className="w-full h-full object-cover" />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                  <p className="text-sm text-gray-300">{t("ufc_photo_caption")}</p>
+                </div>
               </div>
             </div>
           </div>
