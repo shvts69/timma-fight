@@ -83,6 +83,7 @@ export default function Site() {
             {t("hero_disciplines")}
           </p>
           <p className="text-gray-500 mb-10">{t("hero_levels")}</p>
+          <p className="text-red-400/80 text-sm uppercase tracking-widest mb-8">{t("hero_free")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
