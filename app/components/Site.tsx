@@ -65,13 +65,11 @@ export default function Site() {
           <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-6">
             {t("hero_location")}
           </p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-none mb-6">
-            Ti<span className="text-red-600">MMA</span>
-            <br />
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-400">
-              {t("hero_subtitle")}
-            </span>
-          </h1>
+          <img
+            src="/logo.svg"
+            alt="TiMMA Fighting Academy"
+            className="h-24 md:h-32 lg:h-40 mx-auto mb-6"
+          />
           <p className="text-xl md:text-2xl text-gray-400 mb-4">
             {t("hero_disciplines")}
           </p>

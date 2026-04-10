@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Ti element box -->
+  <rect x="0" y="10" width="100" height="100" rx="12" fill="none" stroke="white" stroke-width="4"/>
+  <text x="15" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">22</text>
+  <text x="62" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">NYC</text>
+  <text x="20" y="90" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white">Ti</text>
+  <!-- MMA text -->
+  <text x="120" y="80" font-family="Arial, sans-serif" font-size="80" font-weight="900" fill="white" letter-spacing="2">MMA</text>
+  <!-- FIGHTING ACADEMY -->
+  <text x="122" y="108" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="6">FIGHTING ACADEMY</text>
+</svg>
