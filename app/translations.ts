@@ -23,7 +23,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "Experienced coach who has trained UFC fighter <b>Danil Donchenko</b>. Timur brings elite-level knowledge and real fight experience to every training session.",
     about_bio3:
       "Whether you're stepping into the gym for the first time or preparing for your next fight, Timur will build a program tailored to your goals.",
-    about_ig: "@gasanovtimma on Instagram →",
+    about_ig: "gasanovtimma on Instagram →",
     about_photo: "Photo coming soon",
     services_label: "What We Offer",
     services_title: "Training Programs",
@@ -75,7 +75,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "Опытный тренер, подготовивший бойца UFC <b>Данила Донченко</b>. Тимур привносит знания элитного уровня и реальный боевой опыт в каждую тренировку.",
     about_bio3:
       "Будь вы новичок или готовитесь к следующему бою — Тимур составит программу под ваши цели.",
-    about_ig: "@gasanovtimma в Instagram →",
+    about_ig: "gasanovtimma в Instagram →",
     about_photo: "Фото скоро",
     services_label: "Наши услуги",
     services_title: "Программы тренировок",
@@ -127,7 +127,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "Досвідчений тренер, який підготував бійця UFC <b>Данила Донченка</b>. Тимур привносить знання елітного рівня та реальний бойовий досвід у кожне тренування.",
     about_bio3:
       "Чи ви новачок, чи готуєтесь до наступного бою — Тимур складе програму під ваші цілі.",
-    about_ig: "@gasanovtimma в Instagram →",
+    about_ig: "gasanovtimma в Instagram →",
     about_photo: "Фото незабаром",
     services_label: "Наші послуги",
     services_title: "Програми тренувань",
@@ -179,7 +179,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "UFC döyüşçüsü <b>Danil Donçenkonu</b> hazırlamış təcrübəli məşqçi. Timur hər məşqə elit səviyyəli bilik və real döyüş təcrübəsi gətirir.",
     about_bio3:
       "İstər ilk dəfə zala gəlin, istər növbəti döyüşünüzə hazırlaşın — Timur məqsədlərinizə uyğun proqram hazırlayacaq.",
-    about_ig: "@gasanovtimma Instagram-da →",
+    about_ig: "gasanovtimma Instagram-da →",
     about_photo: "Foto tezliklə",
     services_label: "Xidmətlərimiz",
     services_title: "Məşq proqramları",
