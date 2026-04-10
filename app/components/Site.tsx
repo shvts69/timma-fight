@@ -100,14 +100,6 @@ export default function Site() {
         </div>
       </section>
 
-      {/* Comic divider */}
-      <div className="relative h-16 overflow-hidden">
-        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 60">
-          <path d="M0,30 L150,10 L300,40 L450,5 L600,35 L750,15 L900,45 L1050,8 L1200,30" stroke="rgba(220,38,38,0.15)" strokeWidth="2" fill="none" strokeDasharray="8 6" className="comic-float" />
-          <path d="M0,40 L200,20 L400,50 L600,10 L800,45 L1000,20 L1200,35" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" strokeDasharray="4 8" />
-        </svg>
-      </div>
-
       {/* Stats */}
       <section className="py-16 border-y border-red-900/20 bg-red-950/5 relative overflow-hidden">
         {/* Background impact marks */}
@@ -122,7 +114,7 @@ export default function Site() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" />
+              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6-1
               </p>
@@ -131,7 +123,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "0.5s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "0.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 2x
               </p>
@@ -140,7 +132,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "1s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "1s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 UFC
               </p>
@@ -149,7 +141,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "1.5s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "1.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6+
               </p>
@@ -203,13 +195,11 @@ export default function Site() {
         </div>
       </section>
 
-      {/* Comic slash divider */}
-      <div className="relative h-20 overflow-hidden">
-        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 80">
-          <line x1="0" y1="70" x2="500" y2="10" stroke="rgba(220,38,38,0.12)" strokeWidth="3" strokeLinecap="round" />
-          <line x1="400" y1="60" x2="800" y2="20" stroke="rgba(220,38,38,0.08)" strokeWidth="2" strokeLinecap="round" />
-          <line x1="700" y1="70" x2="1200" y2="10" stroke="rgba(220,38,38,0.12)" strokeWidth="3" strokeLinecap="round" />
-        </svg>
+      {/* Speed lines divider */}
+      <div className="relative h-12 overflow-hidden">
+        <div className="comic-speed-line absolute top-[20%] left-0 w-[60%]" style={{ animationDelay: "0s" }} />
+        <div className="comic-speed-line absolute top-[50%] left-0 w-full" style={{ animationDelay: "1.2s" }} />
+        <div className="comic-speed-line absolute top-[80%] left-0 w-[45%]" style={{ animationDelay: "2.5s" }} />
       </div>
 
       {/* Services */}
@@ -335,15 +325,6 @@ export default function Site() {
           </div>
         </div>
       </section>
-
-      {/* Comic impact divider */}
-      <div className="relative h-24 overflow-hidden flex items-center justify-center">
-        <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 80">
-          <line x1="0" y1="40" x2="520" y2="40" stroke="rgba(220,38,38,0.1)" strokeWidth="1" />
-          <polygon points="600,10 620,35 640,5 630,40 650,30 620,50 640,60 610,50 590,70 600,45 570,55 590,35 560,40" fill="rgba(220,38,38,0.08)" className="comic-burst" />
-          <line x1="680" y1="40" x2="1200" y2="40" stroke="rgba(220,38,38,0.1)" strokeWidth="1" />
-        </svg>
-      </div>
 
       {/* Contact / CTA */}
       <section

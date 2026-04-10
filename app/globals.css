@@ -57,8 +57,8 @@ html {
   50% { transform: translateY(-8px); }
 }
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.3; }
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
 }
 
 .comic-speed-line {
