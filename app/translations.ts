@@ -21,7 +21,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     about_bio1:
       "Professional MMA fighter with a record of <b>6-1</b> and <b>2x World Champion</b>.",
     about_bio2:
-      "Experienced coach who has trained UFC fighters <b>Danil Donchenko</b> and <b>Yaroslav Amosov</b>. Timur brings elite-level knowledge and real fight experience to every training session.",
+      "Experienced coach who has trained UFC fighter <b>Danil Donchenko</b>. Timur brings elite-level knowledge and real fight experience to every training session.",
     ufc_photo_caption: "With UFC fighters Danil Donchenko and Yaroslav Amosov",
     about_bio3:
       "Whether you're stepping into the gym for the first time or preparing for your next fight, Timur will build a program tailored to your goals.",
@@ -75,7 +75,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     about_bio1:
       "Профессиональный боец ММА с рекордом <b>6-1</b> и <b>2-кратный чемпион мира</b>.",
     about_bio2:
-      "Опытный тренер, подготовивший бойцов UFC <b>Данила Донченко</b> и <b>Ярослава Амосова</b>. Тимур привносит знания элитного уровня и реальный боевой опыт в каждую тренировку.",
+      "Опытный тренер, подготовивший бойца UFC <b>Данила Донченко</b>. Тимур привносит знания элитного уровня и реальный боевой опыт в каждую тренировку.",
     ufc_photo_caption: "С бойцами UFC Данилом Донченко и Ярославом Амосовым",
     about_bio3:
       "Будь вы новичок или готовитесь к следующему бою — Тимур составит программу под ваши цели.",
@@ -129,7 +129,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     about_bio1:
       "Професійний боєць ММА з рекордом <b>6-1</b> та <b>2-разовий чемпіон світу</b>.",
     about_bio2:
-      "Досвідчений тренер, який підготував бійців UFC <b>Данила Донченка</b> та <b>Ярослава Амосова</b>. Тимур привносить знання елітного рівня та реальний бойовий досвід у кожне тренування.",
+      "Досвідчений тренер, який підготував бійця UFC <b>Данила Донченка</b>. Тимур привносить знання елітного рівня та реальний бойовий досвід у кожне тренування.",
     ufc_photo_caption: "З бійцями UFC Данилом Донченком та Ярославом Амосовим",
     about_bio3:
       "Чи ви новачок, чи готуєтесь до наступного бою — Тимур складе програму під ваші цілі.",
@@ -183,7 +183,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     about_bio1:
       "Peşəkar MMA döyüşçüsü, rekord <b>6-1</b> və <b>2 dəfə dünya çempionu</b>.",
     about_bio2:
-      "UFC döyüşçüləri <b>Danil Donçenko</b> və <b>Yaroslav Amosovu</b> hazırlamış təcrübəli məşqçi. Timur hər məşqə elit səviyyəli bilik və real döyüş təcrübəsi gətirir.",
+      "UFC döyüşçüsü <b>Danil Donçenkonu</b> hazırlamış təcrübəli məşqçi. Timur hər məşqə elit səviyyəli bilik və real döyüş təcrübəsi gətirir.",
     ufc_photo_caption: "UFC döyüşçüləri Danil Donçenko və Yaroslav Amosov ilə",
     about_bio3:
       "İstər ilk dəfə zala gəlin, istər növbəti döyüşünüzə hazırlaşın — Timur məqsədlərinizə uyğun proqram hazırlayacaq.",
