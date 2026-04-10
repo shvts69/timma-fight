@@ -112,9 +112,6 @@ export default function Site() {
 
       {/* Stats */}
       <section className="py-16 border-y border-red-900/20 bg-red-950/5 relative overflow-hidden">
-        <p className="text-center text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10 px-4">
-          {t("hero_slogan")}
-        </p>
         {/* Background impact marks */}
         <div className="absolute inset-0 pointer-events-none">
           <svg className="absolute top-2 left-[10%] w-20 h-20 comic-glow" viewBox="0 0 100 100">
@@ -370,6 +367,9 @@ export default function Site() {
               gasanovtimma
             </a>
           </div>
+          <p className="text-gray-500 text-sm mt-8 max-w-md mx-auto">
+            {t("hero_slogan")}
+          </p>
         </div>
       </section>
 
