@@ -59,6 +59,14 @@ export default function Site() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <img src="/hero-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
+        {/* Comic speed lines */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="comic-speed-line absolute top-[20%] left-0 w-full" style={{ animationDelay: "0s" }} />
+          <div className="comic-speed-line absolute top-[35%] left-0 w-[60%]" style={{ animationDelay: "1.5s" }} />
+          <div className="comic-speed-line absolute top-[65%] left-0 w-[80%]" style={{ animationDelay: "0.8s" }} />
+          <div className="comic-speed-line absolute top-[80%] left-0 w-[40%]" style={{ animationDelay: "2.2s" }} />
+          <div className="comic-speed-line absolute top-[45%] left-0 w-[70%]" style={{ animationDelay: "3s" }} />
+        </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-6">
             {t("hero_location")}
@@ -92,39 +100,60 @@ export default function Site() {
         </div>
       </section>
 
+      {/* Comic divider */}
+      <div className="relative h-16 overflow-hidden">
+        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 60">
+          <path d="M0,30 L150,10 L300,40 L450,5 L600,35 L750,15 L900,45 L1050,8 L1200,30" stroke="rgba(220,38,38,0.15)" strokeWidth="2" fill="none" strokeDasharray="8 6" className="comic-float" />
+          <path d="M0,40 L200,20 L400,50 L600,10 L800,45 L1000,20 L1200,35" stroke="rgba(255,255,255,0.05)" strokeWidth="1" fill="none" strokeDasharray="4 8" />
+        </svg>
+      </div>
+
       {/* Stats */}
-      <section className="py-16 border-y border-red-900/20 bg-red-950/5">
+      <section className="py-16 border-y border-red-900/20 bg-red-950/5 relative overflow-hidden">
+        {/* Background impact marks */}
+        <div className="absolute inset-0 pointer-events-none">
+          <svg className="absolute top-2 left-[10%] w-20 h-20 comic-glow" viewBox="0 0 100 100">
+            <polygon points="50,0 61,35 100,35 68,57 79,91 50,70 21,91 32,57 0,35 39,35" fill="none" stroke="rgba(220,38,38,0.08)" strokeWidth="2" />
+          </svg>
+          <svg className="absolute bottom-2 right-[15%] w-16 h-16 comic-glow" style={{ animationDelay: "1.5s" }} viewBox="0 0 100 100">
+            <polygon points="50,0 61,35 100,35 68,57 79,91 50,70 21,91 32,57 0,35 39,35" fill="none" stroke="rgba(220,38,38,0.06)" strokeWidth="2" />
+          </svg>
+        </div>
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-4xl md:text-5xl font-black text-red-600">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" />
+              <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6-1
               </p>
-              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider">
+              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_record")}
               </p>
             </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-black text-red-600">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "0.5s" }} />
+              <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 2x
               </p>
-              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider">
+              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_champion")}
               </p>
             </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-black text-red-600">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "1s" }} />
+              <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 UFC
               </p>
-              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider">
+              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_ufc")}
               </p>
             </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-black text-red-600">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-full bg-red-600/5 comic-glow" style={{ animationDelay: "1.5s" }} />
+              <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6+
               </p>
-              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider">
+              <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_kids")}
               </p>
             </div>
@@ -173,6 +202,15 @@ export default function Site() {
           </div>
         </div>
       </section>
+
+      {/* Comic slash divider */}
+      <div className="relative h-20 overflow-hidden">
+        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 80">
+          <line x1="0" y1="70" x2="500" y2="10" stroke="rgba(220,38,38,0.12)" strokeWidth="3" strokeLinecap="round" />
+          <line x1="400" y1="60" x2="800" y2="20" stroke="rgba(220,38,38,0.08)" strokeWidth="2" strokeLinecap="round" />
+          <line x1="700" y1="70" x2="1200" y2="10" stroke="rgba(220,38,38,0.12)" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      </div>
 
       {/* Services */}
       <section
@@ -298,11 +336,26 @@ export default function Site() {
         </div>
       </section>
 
+      {/* Comic impact divider */}
+      <div className="relative h-24 overflow-hidden flex items-center justify-center">
+        <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 80">
+          <line x1="0" y1="40" x2="520" y2="40" stroke="rgba(220,38,38,0.1)" strokeWidth="1" />
+          <polygon points="600,10 620,35 640,5 630,40 650,30 620,50 640,60 610,50 590,70 600,45 570,55 590,35 560,40" fill="rgba(220,38,38,0.08)" className="comic-burst" />
+          <line x1="680" y1="40" x2="1200" y2="40" stroke="rgba(220,38,38,0.1)" strokeWidth="1" />
+        </svg>
+      </div>
+
       {/* Contact / CTA */}
       <section
         id="contact"
-        className="py-24 bg-red-950/10 border-t border-red-900/20"
+        className="py-24 bg-red-950/10 border-t border-red-900/20 relative overflow-hidden"
       >
+        {/* Background action lines */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="comic-speed-line absolute top-[30%] left-0 w-[50%]" style={{ animationDelay: "0.5s" }} />
+          <div className="comic-speed-line absolute top-[60%] left-0 w-[70%]" style={{ animationDelay: "2s" }} />
+          <div className="comic-speed-line absolute top-[80%] left-0 w-[40%]" style={{ animationDelay: "3.5s" }} />
+        </div>
         <div className="max-w-2xl mx-auto px-4 text-center">
           <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-4">
             {t("contact_label")}
