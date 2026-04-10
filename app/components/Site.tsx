@@ -160,13 +160,8 @@ export default function Site() {
               </a>
             </div>
             <div className="relative">
-              <div className="aspect-[3/4] bg-gradient-to-br from-red-950/30 to-gray-900 rounded-lg border border-red-900/20 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-6xl font-black text-red-600/20">TiMMA</p>
-                  <p className="text-gray-600 mt-4 text-sm">
-                    {t("about_photo")}
-                  </p>
-                </div>
+              <div className="aspect-[3/4] rounded-lg border border-red-900/20 overflow-hidden">
+                <img src="/timur.jpg" alt="Timur Gasanov" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
