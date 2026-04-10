@@ -176,32 +176,77 @@ export default function Site() {
       {/* Services */}
       <section
         id="services"
-        className="py-24 bg-gradient-to-b from-transparent via-red-950/5 to-transparent"
+        className="py-24"
       >
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-4 text-center">
-            {t("services_label")}
-          </p>
-          <h2 className="text-4xl md:text-5xl font-black uppercase text-center mb-16">
-            {t("services_title")}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-gray-950 border border-red-900/20 p-8 hover:border-red-600/40 transition-colors group"
-              >
-                <span className="text-xs font-bold uppercase tracking-wider text-red-600 bg-red-950/50 px-3 py-1">
-                  {service.tag}
-                </span>
-                <h3 className="text-xl font-bold mt-4 mb-3 group-hover:text-red-500 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {service.desc}
-                </p>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-end justify-between mb-16">
+            <div>
+              <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-4">
+                {t("services_label")}
+              </p>
+              <h2 className="text-4xl md:text-6xl font-black uppercase">
+                {t("services_title")}
+              </h2>
+            </div>
+            <a href="#contact" className="hidden md:block text-red-500 hover:text-red-400 uppercase text-sm tracking-wider font-bold transition-colors">
+              {t("hero_cta")} →
+            </a>
+          </div>
+
+          {/* Bento Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            {/* Fight Prep - large */}
+            <div className="md:col-span-7 relative overflow-hidden rounded-2xl bg-gradient-to-br from-red-950 to-red-900/20 border border-red-800/30 p-10 md:p-14 min-h-[320px] flex flex-col justify-end group hover:border-red-600/50 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[150px] md:text-[200px] font-black text-red-600/5 leading-none select-none">01</div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-3">{t("s1_tag")}</span>
+              <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s1_title")}</h3>
+              <p className="text-gray-400 max-w-md">{t("s1_desc")}</p>
+            </div>
+
+            {/* Group Classes */}
+            <div className="md:col-span-5 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-10 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[150px] font-black text-white/[0.02] leading-none select-none">02</div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s2_tag")}</span>
+              <h3 className="text-2xl md:text-3xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s2_title")}</h3>
+              <p className="text-gray-500 text-sm">{t("s2_desc")}</p>
+            </div>
+
+            {/* Gym Training */}
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">03</div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s3_tag")}</span>
+              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s3_title")}</h3>
+              <p className="text-gray-500 text-sm">{t("s3_desc")}</p>
+            </div>
+
+            {/* Outdoor Training */}
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">04</div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s4_tag")}</span>
+              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s4_title")}</h3>
+              <p className="text-gray-500 text-sm">{t("s4_desc")}</p>
+            </div>
+
+            {/* Beach Runs */}
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">05</div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s5_tag")}</span>
+              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s5_title")}</h3>
+              <p className="text-gray-500 text-sm">{t("s5_desc")}</p>
+            </div>
+
+            {/* Kids - wide */}
+            <div className="md:col-span-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-950 via-red-950/10 to-gray-950 border border-gray-800/50 p-10 md:p-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 group hover:border-red-600/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 text-[150px] font-black text-white/[0.02] leading-none select-none">06</div>
+              <div>
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s6_tag")}</span>
+                <h3 className="text-2xl md:text-3xl font-black uppercase group-hover:text-red-400 transition-colors">{t("s6_title")}</h3>
               </div>
-            ))}
+              <p className="text-gray-500 max-w-md text-sm">{t("s6_desc")}</p>
+              <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors shrink-0">
+                {t("hero_cta")}
+              </a>
+            </div>
           </div>
         </div>
       </section>
