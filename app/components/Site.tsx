@@ -284,14 +284,14 @@ export default function Site() {
             </div>
             <div className="aspect-video rounded-lg overflow-hidden border border-red-900/20">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.5!2d-73.98!3d40.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM0JzQ4LjAiTiA3M8KwNTgnNDguMCJX!5e0!3m2!1sen!2sus!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.5!2d-73.9732699!3d40.5872268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2450a2b397125%3A0x6f3da6e952c961cb!2sNew%20York%20Fight%20Club!5e0!3m2!1sen!2sus!4v1"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) contrast(0.9) brightness(0.8)" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="TiMMA Fighting Academy location"
+                title="TiMMA Fighting Academy — New York Fight Club"
               />
             </div>
           </div>
