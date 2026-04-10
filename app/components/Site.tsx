@@ -2,6 +2,8 @@
 
 import { useLang } from "./LangContext";
 import LangSwitcher from "./LangSwitcher";
+import { AnimatedCard, AnimatedPhoto } from "./AnimatedCard";
+import CountUp from "./CountUp";
 
 export default function Site() {
   const { t } = useLang();
@@ -117,7 +119,7 @@ export default function Site() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
-                6-1
+                <CountUp value="6" suffix="-1" />
               </p>
               <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_record")}
@@ -126,7 +128,7 @@ export default function Site() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" style={{ animationDelay: "0.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
-                2x
+                <CountUp value="2" suffix="x" />
               </p>
               <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_champion")}
@@ -144,7 +146,7 @@ export default function Site() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" style={{ animationDelay: "1.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
-                6+
+                <CountUp value="6" suffix="+" />
               </p>
               <p className="text-gray-500 mt-2 uppercase text-sm tracking-wider relative">
                 {t("stat_kids")}
@@ -182,15 +184,19 @@ export default function Site() {
               </a>
             </div>
             <div className="relative grid grid-cols-2 gap-3">
-              <div className="col-span-2 aspect-[16/9] rounded-lg border border-red-900/20 overflow-hidden">
-                <img src="/timur.jpg" alt="Timur Gasanov" className="w-full h-full object-cover object-top" />
-              </div>
-              <div className="col-span-2 relative aspect-[2/1] rounded-lg border border-red-900/20 overflow-hidden">
-                <img src="/ufc-fighters.jpg" alt="Timur with UFC fighters Danil Donchenko and Yaroslav Amosov" className="w-full h-full object-cover object-top" />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
-                  <p className="text-xs text-gray-300">{t("ufc_photo_caption")}</p>
+              <AnimatedPhoto>
+                <div className="col-span-2 aspect-[16/9] rounded-lg border border-red-900/20 overflow-hidden">
+                  <img src="/timur.jpg" alt="Timur Gasanov" className="w-full h-full object-cover object-top" />
                 </div>
-              </div>
+              </AnimatedPhoto>
+              <AnimatedPhoto>
+                <div className="col-span-2 relative aspect-[2/1] rounded-lg border border-red-900/20 overflow-hidden">
+                  <img src="/ufc-fighters.jpg" alt="Timur with UFC fighters Danil Donchenko and Yaroslav Amosov" className="w-full h-full object-cover object-top" />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+                    <p className="text-xs text-gray-300">{t("ufc_photo_caption")}</p>
+                  </div>
+                </div>
+              </AnimatedPhoto>
             </div>
           </div>
         </div>
@@ -225,72 +231,78 @@ export default function Site() {
 
           {/* Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            {/* Fight Prep - large */}
-            <div className="md:col-span-7 relative overflow-hidden rounded-2xl border border-red-800/30 p-10 md:p-14 min-h-[380px] flex flex-col justify-end group hover:border-red-600/50 transition-all duration-500">
-              <img src="/fight-prep.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-              <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-3 block">{t("s1_tag")}</span>
-                <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s1_title")}</h3>
-                <p className="text-gray-300 max-w-md">{t("s1_desc")}</p>
+            <AnimatedCard index={0}>
+              <div className="md:col-span-7 relative overflow-hidden rounded-2xl border border-red-800/30 p-10 md:p-14 min-h-[380px] flex flex-col justify-end group hover:border-red-600/50 transition-all duration-500">
+                <img src="/fight-prep.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                <div className="relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-3 block">{t("s1_tag")}</span>
+                  <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s1_title")}</h3>
+                  <p className="text-gray-300 max-w-md">{t("s1_desc")}</p>
+                </div>
               </div>
-            </div>
+            </AnimatedCard>
 
-            {/* Group Classes */}
-            <div className="md:col-span-5 relative overflow-hidden rounded-2xl border border-gray-800/50 p-10 min-h-[380px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <img src="/group-classes.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-              <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s2_tag")}</span>
-                <h3 className="text-2xl md:text-3xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s2_title")}</h3>
-                <p className="text-gray-300 text-sm">{t("s2_desc")}</p>
+            <AnimatedCard index={1}>
+              <div className="md:col-span-5 relative overflow-hidden rounded-2xl border border-gray-800/50 p-10 min-h-[380px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+                <img src="/group-classes.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                <div className="relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s2_tag")}</span>
+                  <h3 className="text-2xl md:text-3xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s2_title")}</h3>
+                  <p className="text-gray-300 text-sm">{t("s2_desc")}</p>
+                </div>
               </div>
-            </div>
+            </AnimatedCard>
 
-            {/* Gym Training */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <img src="/gym-training.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-              <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s3_tag")}</span>
-                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s3_title")}</h3>
-                <p className="text-gray-300 text-sm">{t("s3_desc")}</p>
+            <AnimatedCard index={2}>
+              <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+                <img src="/gym-training.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                <div className="relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s3_tag")}</span>
+                  <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s3_title")}</h3>
+                  <p className="text-gray-300 text-sm">{t("s3_desc")}</p>
+                </div>
               </div>
-            </div>
+            </AnimatedCard>
 
-            {/* Outdoor Training */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <img src="/outdoor.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-              <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s4_tag")}</span>
-                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s4_title")}</h3>
-                <p className="text-gray-300 text-sm">{t("s4_desc")}</p>
+            <AnimatedCard index={3}>
+              <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+                <img src="/outdoor.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                <div className="relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s4_tag")}</span>
+                  <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s4_title")}</h3>
+                  <p className="text-gray-300 text-sm">{t("s4_desc")}</p>
+                </div>
               </div>
-            </div>
+            </AnimatedCard>
 
-            {/* Beach Runs */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <img src="/beach-runs.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-              <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s5_tag")}</span>
-                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s5_title")}</h3>
-                <p className="text-gray-300 text-sm">{t("s5_desc")}</p>
+            <AnimatedCard index={4}>
+              <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+                <img src="/beach-runs.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                <div className="relative z-10">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s5_tag")}</span>
+                  <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s5_title")}</h3>
+                  <p className="text-gray-300 text-sm">{t("s5_desc")}</p>
+                </div>
               </div>
-            </div>
+            </AnimatedCard>
 
-            {/* Kids - wide */}
-            <div className="md:col-span-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-950 via-red-950/10 to-gray-950 border border-gray-800/50 p-10 md:p-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 group hover:border-red-600/30 transition-all duration-500">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s6_tag")}</span>
-                <h3 className="text-2xl md:text-3xl font-black uppercase group-hover:text-red-400 transition-colors">{t("s6_title")}</h3>
+            <AnimatedCard index={5}>
+              <div className="md:col-span-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-950 via-red-950/10 to-gray-950 border border-gray-800/50 p-10 md:p-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 group hover:border-red-600/30 transition-all duration-500">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s6_tag")}</span>
+                  <h3 className="text-2xl md:text-3xl font-black uppercase group-hover:text-red-400 transition-colors">{t("s6_title")}</h3>
+                </div>
+                <p className="text-gray-500 max-w-md text-sm">{t("s6_desc")}</p>
+                <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors shrink-0">
+                  {t("hero_cta")}
+                </a>
               </div>
-              <p className="text-gray-500 max-w-md text-sm">{t("s6_desc")}</p>
-              <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors shrink-0">
-                {t("hero_cta")}
-              </a>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
