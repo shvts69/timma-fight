@@ -20,8 +20,8 @@ export default function Site() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-red-900/30">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="#" className="text-2xl font-black tracking-tight">
-            Ti<span className="text-red-600">MMA</span>
+          <a href="#">
+            <img src="/logo-nav.svg" alt="TiMMA" className="h-10" />
           </a>
           <div className="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wider">
             <a href="#about" className="hover:text-red-500 transition-colors">
