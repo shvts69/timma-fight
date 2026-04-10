@@ -57,11 +57,8 @@ export default function Site() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600 rounded-full blur-[128px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-red-800 rounded-full blur-[96px]" />
-        </div>
+        <img src="/hero-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <p className="text-red-500 uppercase tracking-[0.3em] text-sm font-medium mb-6">
             {t("hero_location")}
