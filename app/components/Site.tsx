@@ -68,6 +68,9 @@ export default function Site() {
             alt="TiMMA Fighting Academy"
             className="h-24 md:h-32 lg:h-40 mx-auto mb-6"
           />
+          <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-4">
+            {t("hero_slogan")}
+          </p>
           <p className="text-xl md:text-2xl text-gray-400 mb-4">
             {t("hero_disciplines")}
           </p>
