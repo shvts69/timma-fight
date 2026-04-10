@@ -114,7 +114,7 @@ export default function Site() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" />
+              <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6-1
               </p>
@@ -123,7 +123,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "0.5s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" style={{ animationDelay: "0.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 2x
               </p>
@@ -132,7 +132,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "1s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" style={{ animationDelay: "1s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 UFC
               </p>
@@ -141,7 +141,7 @@ export default function Site() {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 rounded-full bg-red-600/20 comic-glow" style={{ animationDelay: "1.5s" }} />
+              <div className="absolute -inset-4 rounded-full bg-red-600/15 blur-xl comic-glow" style={{ animationDelay: "1.5s" }} />
               <p className="text-4xl md:text-5xl font-black text-red-600 relative">
                 6+
               </p>
