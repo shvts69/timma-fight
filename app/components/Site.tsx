@@ -196,48 +196,62 @@ export default function Site() {
           {/* Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
             {/* Fight Prep - large */}
-            <div className="md:col-span-7 relative overflow-hidden rounded-2xl bg-gradient-to-br from-red-950 to-red-900/20 border border-red-800/30 p-10 md:p-14 min-h-[320px] flex flex-col justify-end group hover:border-red-600/50 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[150px] md:text-[200px] font-black text-red-600/5 leading-none select-none">01</div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-3">{t("s1_tag")}</span>
-              <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s1_title")}</h3>
-              <p className="text-gray-400 max-w-md">{t("s1_desc")}</p>
+            <div className="md:col-span-7 relative overflow-hidden rounded-2xl border border-red-800/30 p-10 md:p-14 min-h-[380px] flex flex-col justify-end group hover:border-red-600/50 transition-all duration-500">
+              <img src="/fight-prep.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-400 mb-3 block">{t("s1_tag")}</span>
+                <h3 className="text-3xl md:text-4xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s1_title")}</h3>
+                <p className="text-gray-300 max-w-md">{t("s1_desc")}</p>
+              </div>
             </div>
 
             {/* Group Classes */}
-            <div className="md:col-span-5 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-10 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[150px] font-black text-white/[0.02] leading-none select-none">02</div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s2_tag")}</span>
-              <h3 className="text-2xl md:text-3xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s2_title")}</h3>
-              <p className="text-gray-500 text-sm">{t("s2_desc")}</p>
+            <div className="md:col-span-5 relative overflow-hidden rounded-2xl border border-gray-800/50 p-10 min-h-[380px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <img src="/group-classes.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s2_tag")}</span>
+                <h3 className="text-2xl md:text-3xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s2_title")}</h3>
+                <p className="text-gray-300 text-sm">{t("s2_desc")}</p>
+              </div>
             </div>
 
             {/* Gym Training */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">03</div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s3_tag")}</span>
-              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s3_title")}</h3>
-              <p className="text-gray-500 text-sm">{t("s3_desc")}</p>
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <img src="/gym-training.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s3_tag")}</span>
+                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s3_title")}</h3>
+                <p className="text-gray-300 text-sm">{t("s3_desc")}</p>
+              </div>
             </div>
 
             {/* Outdoor Training */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">04</div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s4_tag")}</span>
-              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s4_title")}</h3>
-              <p className="text-gray-500 text-sm">{t("s4_desc")}</p>
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <img src="/outdoor.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s4_tag")}</span>
+                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s4_title")}</h3>
+                <p className="text-gray-300 text-sm">{t("s4_desc")}</p>
+              </div>
             </div>
 
             {/* Beach Runs */}
-            <div className="md:col-span-4 relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800/50 p-8 min-h-[280px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[120px] font-black text-white/[0.02] leading-none select-none">05</div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3">{t("s5_tag")}</span>
-              <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s5_title")}</h3>
-              <p className="text-gray-500 text-sm">{t("s5_desc")}</p>
+            <div className="md:col-span-4 relative overflow-hidden rounded-2xl border border-gray-800/50 p-8 min-h-[320px] flex flex-col justify-end group hover:border-red-600/30 transition-all duration-500">
+              <img src="/beach-runs.jpg" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s5_tag")}</span>
+                <h3 className="text-2xl font-black uppercase mb-3 group-hover:text-red-400 transition-colors">{t("s5_title")}</h3>
+                <p className="text-gray-300 text-sm">{t("s5_desc")}</p>
+              </div>
             </div>
 
             {/* Kids - wide */}
             <div className="md:col-span-12 relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-950 via-red-950/10 to-gray-950 border border-gray-800/50 p-10 md:p-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6 group hover:border-red-600/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 text-[150px] font-black text-white/[0.02] leading-none select-none">06</div>
               <div>
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-500 mb-3 block">{t("s6_tag")}</span>
                 <h3 className="text-2xl md:text-3xl font-black uppercase group-hover:text-red-400 transition-colors">{t("s6_title")}</h3>
