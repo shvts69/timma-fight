@@ -359,7 +359,7 @@ export default function Site() {
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold uppercase tracking-wider transition-colors"
             >
-              DM timmafightnyc
+              timmafightnyc
             </a>
             <a
               href="https://instagram.com/gasanovtimma"
